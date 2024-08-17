@@ -2,10 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Reading Jenkinsfile from Git repo') {
             steps {
-                echo 'Hello World'
+                echo 'Reading Jenkinsfile'
             }
+	stage('Excuting Jenkinsfile script') {
+            steps {
+                echo 'Script Done'
+            }
+
         }
     }
 }
