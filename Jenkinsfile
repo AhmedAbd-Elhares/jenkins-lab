@@ -6,12 +6,11 @@ pipeline {
             steps {
                 echo 'Reading Jenkinsfile'
             }
+	}
 	stage('Excuting Jenkinsfile script') {
             steps {
                 echo 'Script Done'
             }
-
         }
     }
 }
-
